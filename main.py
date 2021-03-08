@@ -1,8 +1,7 @@
-import pygame
-import neat
-import time
 import os
 import random
+import neat
+import pygame
 
 pygame.font.init()
 WIDTH = 800
