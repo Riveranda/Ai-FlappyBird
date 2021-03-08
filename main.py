@@ -263,5 +263,5 @@ def run(config_loc):
 
 if __name__ == "__main__":
     local_directory = os.path.dirname(__file__)
-    config_path = os.path.join(local_directory, "config-feedforward.txt")
+    config_path = os.path.join(local_directory, "neatsconfig.txt")
     run(config_path)
