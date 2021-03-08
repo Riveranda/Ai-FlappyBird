@@ -17,6 +17,7 @@ BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs", "bg.png
 
 FONT = pygame.font.SysFont("comicsans", 50)
 
+generation = 0
 
 # WIN = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 # pygame.display.set_caption("Flappy Bird")
@@ -151,12 +152,15 @@ class Base:
         win.blit(self.IMG, (self.x2, self.y))
 
 
-def draw_window(win, birds, pipes, base, score):
+def draw_window(win, birds, pipes, base, score, gen):
     win.blit(BG_IMG, (0, 0))
     for pipe in pipes:
         pipe.draw(win)
     text = FONT.render("Score: " + str(score), True, (255, 255, 255))
     win.blit(text, (WIN_WIDTH - 10 - text.get_width(), 10))
+
+    text = FONT.render("Gen: " + str(gen), True, (255, 255, 255))
+    win.blit(text, (10, 10))
     base.draw(win)
     for bird in birds:
         bird.draw(win)
@@ -177,7 +181,8 @@ def main(genomes, config):
     base = Base(730)
     pipes = [Pipe(700)]
     score = 0
-
+    global generation
+    generation += 1
     win = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
     clock = pygame.time.Clock()
     run_bool = True
@@ -233,7 +238,7 @@ def main(genomes, config):
                 nets.pop(x)
                 ge.pop(x)
         base.move()
-        draw_window(win, birds, pipes, base, score)
+        draw_window(win, birds, pipes, base, score, generation)
 
 
 def run(config_loc):
