@@ -151,7 +151,7 @@ class Base:
 
 def draw_window(win, birds, pipes, base, score, gen, pipe_ind):
     win.blit(BACKGROUND, (0, 0))
-    win.blit(BACKGROUND,(BACKGROUND.get_width(), 0))
+    win.blit(BACKGROUND, (BACKGROUND.get_width(), 0))
     for pipe in pipes:
         pipe.draw(win)
     text = font.render("Score: " + str(score), True, (255, 255, 255))
