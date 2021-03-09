@@ -1,8 +1,8 @@
 # AI-FlappyBird
 
-> <h4>This project was made to demonstrate the power of the NEATS neural network when applied to
-> simple games such as flappy bird.</h4>
-> </br>
+> <h3>This project was made to demonstrate the power of the NEATS neural network when applied to
+> simple games such as flappy bird.</h3>
+> 
 > The goal of this project was to achieve a generation of birds which passed the 1000th' pipe,</br>
 > and the brilliant NEATS engine destroyed that goal and pushes past 5000, embarrassing any human player.
 > </br>
