@@ -23,5 +23,5 @@
 > After several generations, the birds have finally learned to navigate through this simple game,</br>
 > and given time these super birds can become near perfect and achieve scores in the thousands.
 > </br>
-> </br>
+> 
 ![Ai Flappy Bird](flappybirdai2.png?raw=true "Environment Variables")</br>
