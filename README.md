@@ -1,6 +1,8 @@
 # AI-FlappyBird
 > This project was made to demonstrate the power of the NEATS neural network when applied to </br>
 > simple games such as flappy bird. 
+> </br>
+> </br>
 ![Ai Flappy Bird](flappybirdai.png?raw=true "Environment Variables")</br>
 > 
 > # Pygame</br>
@@ -9,5 +11,8 @@
 > physics and feel of the original game. From there it was time to implement our neural netowrk.
 > 
 > # NEATS</br>
-> The NEATS neural network was implemented using generational learning and the
+> The NEATS neural network was implemented using generational learning.</br>
+> Only the best members of each generation are chosen to go on. Birds are rewarded for reaching</br>
+> further in the level, and receive a huge boost to their fitness when they pass through a pipe.</br>
+> 
 > 

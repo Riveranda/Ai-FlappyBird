@@ -197,7 +197,7 @@ def main(genomes, config):
     run_bool = True
 
     while run_bool and len(birds) > 0:
-        clock.tick(30)
+        # clock.tick(30)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run_bool = False
