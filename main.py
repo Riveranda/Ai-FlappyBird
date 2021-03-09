@@ -4,7 +4,7 @@ import neat
 import pygame
 
 pygame.font.init()
-WIDTH = 800
+WIDTH = 600
 HEIGHT = 800
 
 BIRDS = [pygame.transform.scale2x(pygame.image.load(os.path.join("imgs", "bird1.png"))),
@@ -228,7 +228,7 @@ def main(genomes, config):
                     nets.pop(x)
                     ge.pop(x)
 
-                if not pipe.passed and pipe.x < bird.x:
+                if not pipe.passed and pipe.x - 150 < bird.x:
                     pipe.passed = True
                     add_pipe = True
             if pipe.x + pipe.PIPE_TOP.get_width() < 0:
