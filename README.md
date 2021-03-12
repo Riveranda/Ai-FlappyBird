@@ -24,4 +24,4 @@
 > and given time these super birds can become near perfect and achieve scores in the thousands.
 > </br>
 > </br>
-![Ai Flappy Bird](flappybirdai2.png?raw=true "Environment Variables")</br>
+![Ai Flappy Bird](superbird.png?raw=true "Environment Variables")</br>
